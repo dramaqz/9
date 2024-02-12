@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Slider with Text</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+			overflow: hidden;
+			background-color: black;
+			font-family: 'Fantasy';
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: left;
+            
+            background-size: contain;
+			background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .slide-text {
+            position: absolute;
+            bottom: 15%;
+			padding-left: 5%;
+			padding-right:5%;
+			font-size: 16px;
+            
+            # transform: translate(-50%, -50%);
+            color: #fff;
+            
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+		.slide-text-cn {
+            position: absolute;
+            bottom: 5%;
+			padding-left: 5%;
+			padding-right: 5%;
+            
+            # transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 10px;
+            # text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('durian_planet.png');">
+            <div class="slide-text-cn">地球时2094年2月14日，我们生活在一个叫做榴莲的小行星上，因为它的形状很像榴莲，但不要担心，这里的空气没有榴莲味，我知道你不喜欢那剧烈的臭味。榴莲在汉语中有留恋的意思，它也代表了我们对家乡地球的思念。
+			</div><div class="slide-text">February 14, 2094<br>
+We live on a small asteroid called Durian. Its shape resembles that of a durian fruit, but don't worry, the air here doesn't carry the pungent aroma of durians. I know you don't appreciate that strong smell. In Chinese, "Durian" carries a sense of nostalgia, symbolizing our longing for our home planet, Earth.
+
+			</div>
+        </div>
+		
+		<div class="swiper-slide" style="background-image:url('rotating_house.JPG');">
+            <div class="slide-text-cn">不同星球的日夜长短不同，榴莲是一个被太阳潮汐锁定的小行星，它面向太阳的一面永远不会改变。我们的房子，恰好住在日和夜的交界处；房子每隔24小时转一圈，就模拟了我们在地球上的一天一夜。
+
+			</div><div class="slide-text">The length of day and night varies on different planets, and Durian is a tidally locked asteroid, meaning one side is permanently facing the sun. Our house happens to be situated at the boundary between day and night. It completes a rotation every 24 hours, simulating a day and night cycle similar to Earth's.
+
+			</div>
+        </div>
+		
+		
+		 <div class="swiper-slide" style="background-image:url('fish_tank_bedroom.jpg');">
+            <div class="slide-text-cn">我们的卧室在水下，就像生活在一个鱼缸里面。玻璃外就是你喜欢的鱼儿们，安静地嬉闹着。伴着清晨的阳光，我打了个哈欠，你从背后抱住我，我转过身，轻轻说声：情人节快乐。你像鱼儿看到食物一样吻过来。你那尖尖的胡渣然让我想起了刺豚。
+			</div><div class="slide-text">Our bedroom is submerged underwater, akin to living inside an aquarium. Beyond the glass, your beloved fishes swim gracefully, creating a tranquil scene. With the morning sunlight streaming in, I yawn, and you embrace me from behind. As I turn around, I softly say, "Happy Valentine's Day." You lean in to kiss me, reminiscent of fishes eagerly approaching food. The sharpness of your stubble reminds me of a pufferfish's spines.
+			</div>
+		</div>
+		
+		
+		
+		 <div class="swiper-slide" style="background-image:url('fish-tank-elevator.jpg');">
+            <div class="slide-text-cn">我们懒洋洋地起来，坐上了透明管道电梯，缓缓地来到了地面的衣帽间。外面有点冷，但cashmere 的内衣穿着刚刚暖和。你跳过那几件印着 uber 的外套，选了我买给你的那件杰克衫，我也换上了 你买给我的黑色同款。
+
+			</div><div class="slide-text">We lazily got up and hopped onto the transparent tube elevator, gliding slowly to the dressing room on the surface. It was a bit chilly outside, but the cashmere underwear provided just the right warmth. You skipped the coats with the Uber logo and chose a Jack shirt I bought you. I opted for the black version you bought me.
+			</div>
+		</div>
+		
+		
+		 <div class="swiper-slide" style="background-image:url('plant_living_room.jpg');">
+            <div class="slide-text-cn">来到客厅，印度茶已经自动泡好在桌面。我们坐在沙发上，室内有很多很多你从地球带来的植物，你可以一一叫出他们的名字。
+
+			</div><div class="slide-text">Entering the living room, Indian tea was already steeped and waiting on the table. We settled onto the sofa surrounded by a multitude of plants you brought from Earth.
+
+			</div>
+		</div>
+		
+		 <div class="swiper-slide" style="background-image:url('piano_and_dance.jpg');">
+            <div class="slide-text-cn">我们漫步到花园中. “准备好看你的礼物了吗？”你问。只见一架钢琴从水面上慢慢浮起来，我兴奋地踩着水面来到钢琴旁，“谢谢你的礼物，我很喜欢！我努力用手指追踪你的舞步，一曲 time traveler；
+			</div><div class="slide-text">
+			We strolled into the garden. "Are you ready to see your gift?" you asked. Suddenly, a piano emerged slowly from the water's surface. Excitement bubbled within me as I walked on the water to reach the piano. "Thank you for the gift; I love it!" I exclaimed. I endeavored to follow your footsteps with my fingers, playing a piece titled "Time Traveler."
+
+			</div>
+		 </div>
+		 
+		 
+		 <div class="swiper-slide" style="background-image:url('floating_dishes.JPG');">
+            <div class="slide-text-cn">正午，我们顺着芳香去花园餐厅享受各种各种我们种植的蔬菜水果还有你最爱吃的烤肉.
+			</div><div class="slide-text">
+			At noon, we followed the fragrance to the garden restaurant, indulging in a variety of vegetables, fruits, and your favorite grilled meats—all grown by us.
+			</div>
+		 </div>
+		 
+		 
+		 <div class="swiper-slide" style="background-image:url('surfing.jpg');">
+            <div class="slide-text-cn">下午，我们到外面的海滩冲浪，这里没有鲨鱼，累了我们就漂浮在海面上。
+			</div><div class="slide-text">
+			In the afternoon, we headed to the beach for some surfing. Here, there were no sharks, and when fatigue set in, we simply floated on the sea's surface.</div>
+		 </div>
+		 
+		 
+		 <div class="swiper-slide" style="background-image:url('treehouse.JPG');">
+            <div class="slide-text-cn">我们来到静谧的红杉树内的树屋，在这里制造一些噪声，然后偎依在一起看日落
+			</div><div class="slide-text">
+			Later, we found ourselves in a tranquil treehouse nestled within the redwoods. Making some noise, we leaned against each other, enjoying the sunset.</div>
+		 </div>
+		 
+		 <div class="swiper-slide" style="background-image:url('dining_room.JPG');">
+            <div class="slide-text-cn">晚上我们到了湖面底下的晚宴厅，天花板上是发光的鱼儿点亮的自然的灯光，
+			</div><div class="slide-text">
+			As evening descended, we arrived at the underwater banquet hall. Luminous fish on the ceiling provided natural lighting, </div>
+		 </div>
+		 
+		 <div class="swiper-slide" style="background-image:url('food_on_water.JPG');">
+            <div class="slide-text-cn">精美的食物沿着水流像一艘艘船慢慢地从餐厅的一侧漂流过来。这些都是来自宇宙各地的美食.
+			</div><div class="slide-text">
+			and exquisite dishes floated gently along the water, resembling small boats drifting from one side of the restaurant. These delicacies hailed from various corners of the universe.</div>
+		 </div>
+		 
+		 <div class="swiper-slide" style="background-image:url('tv_drama.jpg');">
+            <div class="slide-text-cn">我们躺在床上，你在空中点了一下，前方出现一个慢慢变大的黑洞----- 这是未来的电视，就像时空传送门一样，可以让你如临其境地观看： 我选了一个爱情抓马剧，名字叫 “ Love is bigger, even than black holes” 
+			</div><div class="slide-text">
+			Lying in bed, you tapped the air, and a slowly expanding black hole appeared ahead—our futuristic television. Similar to a portal through time and space, it allowed us to immerse ourselves in a vivid viewing experience. I chose a romantic sci-fi drama called "Love is Bigger, even than Black Holes." 
+			</div>
+		 </div>
+		 
+		 
+		 <div class="swiper-slide" style="background-image:url('eye-mask.JPG');">
+            <div class="slide-text-cn">
+“你是不是忘记了什么事情啊” <br/>
+“哦对了，这是你的礼物。 这是最新发布的智能眼罩，带上它你就可以和过去的人在梦中交流。”<br/>
+我可以把我们的今天托梦给30岁的你，你一定会觉得不可思议” <br/>
+“哈哈希望我能记住这个梦，在情人节把它讲给你听” <br/>
+			</div><div class="slide-text">
+			"Did you forget something?" you asked. <br/>
+			"Oh, right, this is your gift. It was the latest smart sleep mask, allowing you to communicate with people from the past in your dreams." <br/>
+"I can send our today as a dream to your 30-year-old self; you'd surely find it unbelievable," You remarked. <br/>
+"Haha, I hope I can remember this dream and share it with you on Valentine's Day!" 
+			<br/> You chuckled, "That sounds intriguing!"</div>
+		 </div>
+		 
+		 <div class="swiper-slide" style="background-image:url('good-night.JPG');">
+            <div class="slide-text-cn">
+你说，Hi Cutizen 打开护眼模式，Cutizen 是我们的智能管家的名字。
+随着我们变困，电视的音量越来越小，黑洞的边界也会越小。我们自然地进入梦乡。
+			</div><div class="slide-text">
+			You said, "Hi Cutizen, activate eye-protection mode." Cutizen was the name of our intelligent steward.
+			As we grew sleepy, the TV volume decreased, and the black hole's boundaries contracted. Naturally, we drifted into dreams. 
+			</div>
+		 </div>
+
+	
+		
+		
+		
+        <!-- Add more slides as needed -->
+		
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+</body>
+</html>
